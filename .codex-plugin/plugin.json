@@ -1,0 +1,28 @@
+{
+  "name": "gemini-codex-companion",
+  "version": "0.1.0",
+  "description": "Let Codex request bounded Gemini implementation proposals and generate images while Codex retains approval and write authority.",
+  "author": {
+    "name": "Gary Wong",
+    "url": "https://github.com/Gfriend997"
+  },
+  "homepage": "https://github.com/Gfriend997/gemini-codex-companion",
+  "repository": "https://github.com/Gfriend997/gemini-codex-companion",
+  "license": "MIT",
+  "keywords": ["gemini", "codex", "subagent", "code-review", "image-generation"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Gemini Companion",
+    "shortDescription": "Delegate bounded tasks and images to Gemini",
+    "longDescription": "Codex can request Gemini implementation proposals and image generation while retaining approval, repository writes, validation, and durable local audit records.",
+    "developerName": "Gary Wong",
+    "category": "Developer Tools",
+    "capabilities": ["Instructions", "Local scripts", "External API"],
+    "websiteURL": "https://github.com/Gfriend997/gemini-codex-companion",
+    "defaultPrompt": [
+      "Ask Gemini for a second implementation proposal.",
+      "Use Gemini to review this difficult change.",
+      "Generate an image with Gemini."
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [{
+      "matcher": "startup|resume",
+      "hooks": [{
+        "type": "command",
+        "command": "node \"$PLUGIN_ROOT/hooks/session-start.mjs\"",
+        "commandWindows": "node \"$env:PLUGIN_ROOT\\hooks\\session-start.mjs\"",
+        "timeout": 15,
+        "statusMessage": "Checking Gemini companion"
+      }]
+    }]
+  }
+}
